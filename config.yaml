@@ -1,0 +1,19 @@
+regions:
+  usa: ['SPY', '^GSPC', 'QQQ']
+  australia: ['^AXJO']
+  europe: ['^GDAXI', '^STOXX50E']
+  china: ['000001.SS', '^HSI']
+  india: ['^NSEI', '^BSESN']
+  middle_east: ['TASI.SR']
+
+crises:
+  - name: "US Debt Ceiling 2025"
+    date: "2025-07-15"
+    region: "usa"
+  - name: "RBA Shock 2025"
+    date: "2025-03-10"
+    region: "australia"
+
+lookback_days: 252  # 1 year
+event_window: [ -10, +20 ]  # trading days
+transaction_cost: 0.001
